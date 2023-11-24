@@ -65,7 +65,7 @@ def dataEntry():
     label_hasil.config(text=f"Hasil Prediksi untuk {nama_siswa} adalah {prediksi}")
     
     # Simpan data ke database SQLite
-    conn = sqlite3.connect('irajesicadb.db')
+    conn = sqlite3.connect('iradb.db')
     cursor = conn.cursor()
 
     # Membuat tabel jika belum ada
